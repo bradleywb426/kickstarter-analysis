@@ -1,18 +1,35 @@
 # An Analysis of Kickstarter Campaigns
 Analyzing data from US-based campagins of Kickstarters for plays to uncover trends in successful and failed campaigns
 
+## Overview
+Background and Purpose of Analysis
+
+## Analysis and Challanges
+### Analysis of Outcomes based on Launch Date
+### Analysis of Outcomes based on Goals
+## Challenges and Difficulties Encountered
+## Results
+- What are two conclusions you can draw about the Outcomes based on Launch Date?
+
+- What can you conclude about the Outcomes based on Goals?
+
+- What are some limitations of this dataset?
+
+- What are some other possible tables and/or graphs that we could create?
+
+
 ## Breakdown of Campaign Outcomes based on Category
 ![Parent Category Outcomes](https://user-images.githubusercontent.com/72563705/171232082-14736fc9-0bfb-445e-b041-df170e95471c.png)
 
-Looking at the breakdown of Kickstarter campaign outcomes in the US, we can see that "Theater" is the most numerous category with over 900 entries. Subsequently, "Theater" also has the most successes and failures with over 500 successful campaigns and over 300 failed campaigns. 
+Looking at the breakdown of Kickstarter campaign outcomes in the US, we can see that "Theater" is the most numerous category with over 900 entries (912 to be exact). Subsequently, "Theater" also has the most successes and failures with over 500 successful campaigns and over 300 failed campaigns (specifically 525 and 349 respectfully). 
 
 ![Subcategory Outcomes](https://user-images.githubusercontent.com/72563705/171234265-c14180f4-c064-4ea3-b69d-c07cee4135ac.png)
-Furthering our view into the Subcategories of "Theater" we can see that "Plays" are the most numerous, with almost 700 different campaigns. "Plays" also had the highest success rate of the subcategories with around 400 successes and about 60% success rate.
+Furthering our view into the Subcategories of "Theater" we can see that "Plays" are the most numerous, with almost 700 different campaigns. "Plays" also had the highest success rate of the subcategories with around 400 successes (412 successes) and about 60% success rate (61.4% to be exact).
 
 ## Breakdown of Campaign Outcomes based on Launch Date
 ![Launch Date Outcomes](https://user-images.githubusercontent.com/72563705/171235532-1d4c1dd9-382d-4f6c-95a9-d50ef9bc663b.png)
 
-Looking at the outcomes of the campaigns based on Launch Date, we can see that the failure rate follows the same general pattern as the success rate. The time of the largest difference in failure rates and success rates is in the Spring, particularly the Late Spring.
+Looking at the outcomes of the campaigns based on Launch Date, we can see that the failure rate follows the same general pattern as the success rate. The time of the largest difference in failure rates and success rates is from the Late Spring to Summer. This corresponds with May to August, and the most successful months are May and June.
 
 ## Statistics of Goals and Pledges
 ![Goal Stats](https://user-images.githubusercontent.com/72563705/171253654-f7ecf4a9-6cc7-42fe-b23c-dad53e8b1204.png)
