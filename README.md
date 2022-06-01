@@ -2,12 +2,22 @@
 Analyzing data from US-based campagins of Kickstarters for plays to uncover trends in successful and failed campaigns
 
 ## Overview
-Background and Purpose of Analysis
+Louise just finished her Kickstarter campaign for her play, *Fever*. Now, she wants comparisons on other Kickstarter campaigns for plays and their outcomes. To accomplish this, we have looked through a dataset of Kickstarter campaigns and filtered to look at other plays, and then analyzed their outcomes based on their campaign launch date and their funding goal. 
+
+
+
+
+
 
 ## Analysis and Challanges
+Explain how you performed your analysis using images and links to code, as well as any challenges you encountered and how you overcame them. If you had no challenges, describe any possible challenges or difficulties that could be encountered.
 ### Analysis of Outcomes based on Launch Date
+Looking at the outcomes of the campaigns based on Launch Date, we can see that the failure rate follows the same general pattern as the success rate. The time of the largest difference in failure rates and success rates is from the Late Spring to Summer. This corresponds with May to August, and the most successful months are May and June.
+
 ### Analysis of Outcomes based on Goals
+
 ## Challenges and Difficulties Encountered
+
 ## Results
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
 
