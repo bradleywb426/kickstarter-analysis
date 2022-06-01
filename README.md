@@ -25,27 +25,12 @@ Explain the Code a little. A new column was then created that displayed the Tota
 
 ### Challenges and Difficulties Encountered
 
-No challenges were encountered during these analyses, though many potential difficulties were considered and avoided.
-
-No challenges were encountered, but many potential ones could have occured. Such as over or under filtering data. Misstyping functions. Choosing inappropriate data or use data incorrectly.
+No challenges were encountered during these analyses, though many potential difficulties were considered and avoided. A primary potential difficulty was over or under filtering, as either path could substantially alter the analysis of the dataset and lead to poor recommendations. Another hazard was avoiding using an incorrect function for a task or mistyping a function, which could hinder the analysis of the data or lead to an incorrect analysis of the data. Another problem could arise through using inappropriate data for an analysis or using the correct data incorrectly, which can lead to an irrelevant or incorrect analysis.
 
 ## Results
 
----
-
----
-
-## Analysis and Challanges
-Explain how you performed your analysis using images and links to code, as well as any challenges you encountered and how you overcame them. If you had no challenges, describe any possible challenges or difficulties that could be encountered.
-### Analysis of Outcomes based on Launch Date
-Looking at the outcomes of the campaigns based on Launch Date, we can see that the failure rate follows the same general pattern as the success rate. The time of the largest difference in failure rates and success rates is from the Late Spring to Summer. This corresponds with May to August, and the most successful months are May and June.
-
-### Analysis of Outcomes based on Goals
-
-## Challenges and Difficulties Encountered
-
-## Results
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
+- Looking at the outcomes of the campaigns based on Launch Date, we can see that the failure rate follows the same general pattern as the success rate. The time of the largest difference in failure rates and success rates is from the Late Spring to Summer. This corresponds with May to August, and the most successful months are May and June.
 
 - What can you conclude about the Outcomes based on Goals?
 
@@ -57,26 +42,20 @@ Looking at the outcomes of the campaigns based on Launch Date, we can see that t
   - Parent/sub category
   - Descript Stats Plots
 
+---
+
+---
+
 
 ## Breakdown of Campaign Outcomes based on Category
-![Parent Category Outcomes](https://user-images.githubusercontent.com/72563705/171232082-14736fc9-0bfb-445e-b041-df170e95471c.png)
 
 Looking at the breakdown of Kickstarter campaign outcomes in the US, we can see that "Theater" is the most numerous category with over 900 entries (912 to be exact). Subsequently, "Theater" also has the most successes and failures with over 500 successful campaigns and over 300 failed campaigns (specifically 525 and 349 respectfully). 
 
-![Subcategory Outcomes](https://user-images.githubusercontent.com/72563705/171234265-c14180f4-c064-4ea3-b69d-c07cee4135ac.png)
 Furthering our view into the Subcategories of "Theater" we can see that "Plays" are the most numerous, with almost 700 different campaigns. "Plays" also had the highest success rate of the subcategories with around 400 successes (412 successes) and about 60% success rate (61.4% to be exact).
 
-## Breakdown of Campaign Outcomes based on Launch Date
-![Launch Date Outcomes](https://user-images.githubusercontent.com/72563705/171235532-1d4c1dd9-382d-4f6c-95a9-d50ef9bc663b.png)
-
-Looking at the outcomes of the campaigns based on Launch Date, we can see that the failure rate follows the same general pattern as the success rate. The time of the largest difference in failure rates and success rates is from the Late Spring to Summer. This corresponds with May to August, and the most successful months are May and June.
-
 ## Statistics of Goals and Pledges
-![Goal Stats](https://user-images.githubusercontent.com/72563705/171253654-f7ecf4a9-6cc7-42fe-b23c-dad53e8b1204.png)
 
 These Box and Whisker Plots showcase the statistics of the Successful and Failed Play Kickstarters in the US. The goal of $10000 is above the highest value of the upper range of Successful Campaigns, but is almost the mean value of goals for Failed Campaigns. Looking at the same type of plot applied to the Pledges of Successful and Failed Play Kickstarters in the US tells a similar story.
-
-![Pledge Stats](https://user-images.githubusercontent.com/72563705/171260249-fa512bd5-eb5e-45a8-b95e-543732b599fb.png)
 
 The Pledges for Successful campaigns has the same shape of spread as the Goals, though the range is shifted towards higher values. 
 
