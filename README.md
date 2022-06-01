@@ -4,10 +4,36 @@ Analyzing data from US-based campagins of Kickstarters for plays to uncover tren
 ## Overview
 Louise just finished her Kickstarter campaign for her play, *Fever*. Now, she wants comparisons on other Kickstarter campaigns for plays and their outcomes. To accomplish this, we have looked through a dataset of Kickstarter campaigns and filtered to look at other plays, and then analyzed their outcomes based on their campaign launch date and their funding goal. 
 
+## Analysis and Challenges
+god dammit i lost everything I wrote below here, fuck
 
+### Analysis of Outcomes based on Launch Date
 
+To analyze the dataset based on Launch Date, all of the data was first imported into a Pivot Table. Each row of the table represented one month in the year. Each column represented the number of each different outcome of a Kickstarter that ended in a given month, as well as the total number of Kickstarters that ended in a given month. The data was then filtered to only show campaigns of the "Theater" parent category. Using the Filtered Data, a pivot line chart with markers was then created.
 
+<img src="https://github.com/bradleywb426/kickstarter-analysis/blob/main/resources/Theater_Outcomes_vs_Launch.png" width="600">
 
+### Analysis of Outcomes based on Goals
+
+To analyze the dataset based on Goals, an empty table was created with the goals amount in different brackets. The brackets were from less than $1000, from $1000 to $49999, and greater than $50000. From $1000 to $49999 was then further broken into brackets of about $5000 width. The "COUNTIFS" function was then used to find all Kicstarters that fit our criteria in each bracket using a function like the following:
+
+```
+FUCKING COUNT CODE BULLSHIT
+```
+
+Used SUM to find total number of campaigns in a goal bracket. Calculated Percentage of each outcome in a bracket. Use Percentage and goal brackets to make a line chart.
+
+<img src="https://github.com/bradleywb426/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals.png" width="1000">
+
+### Challenges and Difficulties Encountered
+
+No challenges were encountered, but many potential ones could have occured. Such as over or under filtering data. Misstyping functions. Choosing inappropriate data or use data incorrectly.
+
+## Results
+
+---
+
+---
 
 ## Analysis and Challanges
 Explain how you performed your analysis using images and links to code, as well as any challenges you encountered and how you overcame them. If you had no challenges, describe any possible challenges or difficulties that could be encountered.
@@ -24,8 +50,12 @@ Looking at the outcomes of the campaigns based on Launch Date, we can see that t
 - What can you conclude about the Outcomes based on Goals?
 
 - What are some limitations of this dataset?
+  - Limited Data in Mid to High range
+  - No recent data
 
 - What are some other possible tables and/or graphs that we could create?
+  - Parent/sub category
+  - Descript Stats Plots
 
 
 ## Breakdown of Campaign Outcomes based on Category
