@@ -5,27 +5,27 @@ Analyzing data from US-based campagins of Kickstarters for plays to uncover tren
 Louise just finished her Kickstarter campaign for her play, *Fever*. Now, she wants comparisons on other Kickstarter campaigns for plays and their outcomes. To accomplish this, we have looked through a dataset of Kickstarter campaigns and filtered to look at other plays, and then analyzed their outcomes based on their campaign launch date and their funding goal. 
 
 ## Analysis and Challenges
-god dammit i lost everything I wrote below here, fuck
 
 ### Analysis of Outcomes based on Launch Date
 
-To analyze the dataset based on Launch Date, all of the data was first imported into a Pivot Table. Each row of the table represented one month in the year. Each column represented the number of each different outcome of a Kickstarter that ended in a given month, as well as the total number of Kickstarters that ended in a given month. The data was then filtered to only show campaigns of the "Theater" parent category. Using the Filtered Data, a pivot line chart with markers was then created.
+To begin the analysis on Kickstarter Campaign Outcomes based on Launch Date, the dataset was first imported into a Pivot Table. Each row in the Pivot Table represents one month in a year, and each column represents an outcome of a campaign (i.e., successful, canceled, failed) and the Grand Total of all campaigns that launched in a given month. The data in the Pivot Table is then filtered to only show the data from campaigns in the "Theater" parent category. The filtered data was then used to create a Pivot Chart in the Line Chart with Marker format.
 
 <img src="https://github.com/bradleywb426/kickstarter-analysis/blob/main/resources/Theater_Outcomes_vs_Launch.png" width="600">
 
 ### Analysis of Outcomes based on Goals
 
-To analyze the dataset based on Goals, an empty table was created with the goals amount in different brackets. The brackets were from less than $1000, from $1000 to $49999, and greater than $50000. From $1000 to $49999 was then further broken into brackets of about $5000 width. The "COUNTIFS" function was then used to find all Kicstarters that fit our criteria in each bracket using a function like the following:
+The analysis of Campaign Outcomes based on Goals, an empty table was created where each row is a different bracket of goal amounts. The brackets were less than $1000, from $1000 to $49999, and greater than $50000, and the data from $1000 to $49999 was broken further into brackets of $5000 width. The columns of the table represent the number of each campaign outcome for each bracket. These columns were populated using "COUNTIFS" functions like the following:
 
 ```
-FUCKING COUNT CODE BULLSHIT
+=COUNTIFS(Kickstarter!$D:$D,">=1000",Kickstarter!$F:$F,"Successful",Kickstarter!$R:$R,"plays",Kickstarter!$D:$D,"<=4999")
 ```
-
-Used SUM to find total number of campaigns in a goal bracket. Calculated Percentage of each outcome in a bracket. Use Percentage and goal brackets to make a line chart.
+Explain the Code a little. A new column was then created that displayed the Total Number of campaigns for each Bracket using the "SUM" function. Then, using the found number of each campaign outcome per bracker and the calculated total, the percentage of each outcome for each bracket was calculated. These precentages were than used with the brackets to plot a line graph of the data.
 
 <img src="https://github.com/bradleywb426/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals.png" width="1000">
 
 ### Challenges and Difficulties Encountered
+
+No challenges were encountered during these analyses, though many potential difficulties were considered and avoided.
 
 No challenges were encountered, but many potential ones could have occured. Such as over or under filtering data. Misstyping functions. Choosing inappropriate data or use data incorrectly.
 
