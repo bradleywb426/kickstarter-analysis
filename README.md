@@ -2,24 +2,26 @@
 Analyzing data from US-based campagins of Kickstarters for plays to uncover trends in successful and failed campaigns
 
 ## Overview
-Louise just finished her Kickstarter campaign for her play, *Fever*. Now, she wants comparisons on other Kickstarter campaigns for plays and their outcomes. To accomplish this, we have looked through a dataset of Kickstarter campaigns and filtered to look at other plays, and then analyzed their outcomes based on their campaign launch date and their funding goal. 
+Louise just finished her Kickstarter Campaign for her play, *Fever*. Now, she wants comparisons on other Kickstarter campaigns for plays and their outcomes. To accomplish this, we have looked through a dataset of Kickstarter Campaigns and filtered to look at other plays, and then analyzed their outcomes based on their Campaign launch date and their funding goal. 
 
 ## Analysis and Challenges
 
 ### Analysis of Outcomes based on Launch Date
 
-To begin the analysis on Kickstarter Campaign Outcomes based on Launch Date, the dataset was first imported into a Pivot Table. Each row in the Pivot Table represents one month in a year, and each column represents an outcome of a campaign (i.e., successful, canceled, failed) and the Grand Total of all campaigns that launched in a given month. The data in the Pivot Table is then filtered to only show the data from campaigns in the "Theater" parent category. The filtered data was then used to create a Pivot Chart in the Line Chart with Marker format.
+To begin the analysis on Kickstarter Campaign Outcomes based on Launch Date, the dataset was first imported into a Pivot Table. Each row in the Pivot Table represents one month in a calender year, and each column represents either all Campaigns of a given outcome (i.e., successful, canceled, failed) in a specific month or the Grand Total of all campaigns that launched in said month. The Pivot Table is then filtered to only show the data from Campaigns in the "Theater" parent category, which is then used to create a Pivot Chart. The Pivot Chart is a line chart that shows how many Campaigns of each outcome occured in a given month over all years of data, and has a marker on each line at every month.
 
 <img src="https://github.com/bradleywb426/kickstarter-analysis/blob/main/resources/Theater_Outcomes_vs_Launch.png" width="600">
 
 ### Analysis of Outcomes based on Goals
 
-The analysis of Campaign Outcomes based on Goals, an empty table was created where each row is a different bracket of goal amounts. The brackets were less than $1000, from $1000 to $49999, and greater than $50000, and the data from $1000 to $49999 was broken further into brackets of $5000 width. The columns of the table represent the number of each campaign outcome for each bracket. These columns were populated using "COUNTIFS" functions like the following:
+The analysis of Campaign Outcomes based on Goals started by creating an empty table where each row represents a different bracket of goal amounts. The goal brackets were "less than $1000", "from $1000 to $49999", and "greater than $50000", and the data from $1000 to $49999 was broken further into brackets of $5000 width (i.e., $1000 to $4999). The columns of the table represent the number of each Campaign outcome for each goal bracket. These columns were populated using "COUNTIFS" functions like the following:
 
 ```
 =COUNTIFS(Kickstarter!$D:$D,">=1000",Kickstarter!$F:$F,"Successful",Kickstarter!$R:$R,"plays",Kickstarter!$D:$D,"<=4999")
 ```
-Explain the Code a little. A new column was then created that displayed the Total Number of campaigns for each Bracket using the "SUM" function. Then, using the found number of each campaign outcome per bracker and the calculated total, the percentage of each outcome for each bracket was calculated. These precentages were than used with the brackets to plot a line graph of the data.
+This particular function first checks our Kickstarter data for Campaigns that have a value of greater than or equal $1000 in the "Goal" column, and then checks all Campaigns that fit that criteria for "Successful" in their "Outcome" column. From there, the function finds all Campaigns that fit the previous critera and have "Plays" in the "Sub Category" column, and then excludes any Campaigns that have a goal greater than $4999. Once the "COUNTIFS" functions populate all columns with the number of each outcome for all Campaigns in a given goal bracket, a new column is created of the Total Number of all Campaigns in a given goal bracket. This is done by adding together the previous columns using the "SUM" function. The percentage of each outcome
+
+Then, using the found number of each campaign outcome per bracker and the calculated total, the percentage of each outcome for each bracket was calculated. These precentages were than used with the brackets to plot a line graph of the data.
 
 <img src="https://github.com/bradleywb426/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals.png" width="1000">
 
