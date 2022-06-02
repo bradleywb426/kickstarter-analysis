@@ -29,8 +29,14 @@ No challenges were encountered during these analyses, though many potential diff
 
 ## Results
 
+### Results based on Analyses
+
 Looking at the Launch Date Outcomes, we can see that the level of cancellations is relatively low and constant year round. The number of failed and successful campaigns follow a similar pattern for most of the year, though there are more successes each month than failures. The greatest gap between successful and failed campaigns is from Late Spring through Summer, where the two months with the largest gap being in May and June. Looking at the Outcomes based on Goals, there is a general negative trend where the percentage of succesful campaigns decreases as goal increases. Conversely, there is a positive trend of higher percentage of failed campaigns as goal amounts increase. While the percentages of successes outweigh failures in the $10000 - $14999 bracket, which is where Louise's campaign lies, the difference is rather small. The highest percent of successes happen with goals less than $4999.
 
+### Limitations of Dataset
+
 Some limitations of this data become apparent in the analysis based on goals, as the data appears to say that campaigns between $35000 and $44999 seem to be very successful. However, this is due to the relatively few number of campaigns over $10000. With more data, clearer and more accurate predictions could be made based on goal amounts. Another prominent limitation of the dataset is the lack of data within the past 5 years. This means any relatively recent trends that could influence predictions over how future campaigns could go, especially the near future, will not be accounted for. 
+
+### Further Analysis
 
 To help make up for these limitations, other aspects of the data could be further analyzed. The statistics of the "play" sub category could be calculated and explored to find out if Louise's campaign is an outlier amongst similar campaigns when looking at goal amounts, and potentially how much of an outlier it might be. This could then be further explored by comparing Louise's pledges to the total amount pledged to similar campaigns to again see how Louise's campaigns fits in. It could also be worthwhile to further explore the different genres of Play Kickstarter campaigns, and see if certain genres are more or less likely to be backed as well as how much each genre receives in pledges.
