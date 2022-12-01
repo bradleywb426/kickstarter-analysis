@@ -10,7 +10,7 @@ Louise just finished her Kickstarter campaign for her play, *Fever*, and now wan
 
 To begin the analysis of Kickstarter campaign outcomes based on Launch Date, the dataset was first imported into a Pivot Table where each row in the Pivot Table represents one month in a calendar year.  The columns represent each campaign outcome for all campaigns launched in a given month as well as an additional column for the Grand Total of all campaigns launched for a given month. The Pivot Table is then filtered to only show the data from Campaigns in the "Theater" parent category, and the filtered data is used to create a Pivot Chart. This Pivot Chart is a line chart comparing the number of each campaign outcome in a given month over all years of data and has markers on each line to denote each month.
 
-<p style="text-align: center;">
+<p align="center">
 <img src="https://github.com/bradleywb426/kickstarter-analysis/blob/main/resources/Theater_Outcomes_vs_Launch.png" alt="Theater Outcomes based on Launch Date" width="600">
 </p>
 
@@ -23,8 +23,10 @@ The analysis of campaign outcomes based on Goals started by creating an empty ta
 ```
 This particular function first checks the data for campaigns that have a value of at least $1000 in the "Goal" column and then checks those campaigns for any that have "Successful" in their "Outcome" column. From there, the function further checks those campaigns for “Plays” in the “Sub Category” column, and then further excludes any of those campaigns that have a goal greater than $4999. After the “COUNTIFS” functions populate the number of outcome columns, a new column was created for the Total Number of all campaigns in a given goal bracket. This column was populated by adding the number of each outcome in a given bracket together using the “SUM” function. From there, additional columns for the percentage of each outcome in a given bracket were created. The percentage columns were calculated by dividing the number of specific outcomes in a given bracket by the total number of campaigns in a said bracket. A line chart was then created using the percentages in each bracket.
 
-<img src="https://github.com/bradleywb426/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals.png" width="1000">
-
+<p align="center">
+<img src="https://github.com/bradleywb426/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals.png" alt="Theater Outcomes Based on Goal Amount" width="1000">
+</p>
+  
 ### Challenges and Difficulties Encountered
 
 No challenges were encountered during these analyses, though many potential difficulties were avoided. The primary potential difficulty was over or under-filtering, as either path could substantially alter the analysis of the dataset and lead to poor future recommendations. Another hazard was avoiding using an incorrect function for a task or mistyping a function, which could hinder the analysis of the data or lead to an incorrect analysis of the data. Another problem could arise through using inappropriate data for analysis or using the correct data incorrectly, which can lead to an irrelevant or incorrect analysis.
