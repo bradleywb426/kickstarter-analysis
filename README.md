@@ -10,7 +10,9 @@ Louise just finished her Kickstarter campaign for her play, *Fever*, and now wan
 
 To begin the analysis of Kickstarter campaign outcomes based on Launch Date, the dataset was first imported into a Pivot Table where each row in the Pivot Table represents one month in a calendar year.  The columns represent each campaign outcome for all campaigns launched in a given month as well as an additional column for the Grand Total of all campaigns launched for a given month. The Pivot Table is then filtered to only show the data from Campaigns in the "Theater" parent category, and the filtered data is used to create a Pivot Chart. This Pivot Chart is a line chart comparing the number of each campaign outcome in a given month over all years of data and has markers on each line to denote each month.
 
-<img src="https://github.com/bradleywb426/kickstarter-analysis/blob/main/resources/Theater_Outcomes_vs_Launch.png" width="600">
+<p style="text-align: center;">
+<img src="https://github.com/bradleywb426/kickstarter-analysis/blob/main/resources/Theater_Outcomes_vs_Launch.png" alt="Theater Outcomes based on Launch Date" width="600">
+</p>
 
 ### Analysis of Outcomes based on Goals
 
